@@ -7,19 +7,22 @@ import PosizioniAperte from '../pages/PosizioniAperte';
 import Contatti from '../pages/Contatti';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <MainLayout />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: 'chi-siamo', element: <ChiSiamo /> },
-      { path: 'servizi', element: <Servizi /> },
-      { path: 'posizioni-aperte', element: <PosizioniAperte /> },
-      { path: 'contatti', element: <Contatti /> },
-      { path: 'privacy-policy', element: <PrivacyPolicy /> },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'chi-siamo', element: <ChiSiamo /> },
+        { path: 'servizi', element: <Servizi /> },
+        { path: 'posizioni-aperte', element: <PosizioniAperte /> },
+        { path: 'contatti', element: <Contatti /> },
+        { path: 'privacy-policy', element: <PrivacyPolicy /> },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+);
 
 export default router;
