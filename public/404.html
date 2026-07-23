@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rizten Industrial</title>
+    <script type="text/javascript">
+      // Trick per il supporto delle SPA su GitHub Pages Project Sites:
+      // https://github.com/rafgraham/spa-github-pages
+      // Converte il path in una query string e reindirizza a index.html,
+      // che poi lo ricostruisce ripristinando l'URL originale.
+      var pathSegmentsToKeep = 1; // 1 = mantiene il nome della repo, es. /rizten-industrial/
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-steel-800 font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-navy-800;
+  }
+
+  ::selection {
+    @apply bg-navy-800 text-white;
+  }
+
+  /* Visible keyboard focus everywhere */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid theme('colors.navy.500');
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* --- Signature element: technical "crop mark" corner brackets ---
+     Evokes a blueprint / spec-sheet frame. Corners tighten in on hover. */
+  .corner-frame {
+    position: relative;
+  }
+
+  .corner-frame::before,
+  .corner-frame::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-color: theme('colors.navy.500');
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+  }
+
+  .corner-frame::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+  }
+
+  .corner-frame::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+
+  .corner-frame:hover::before,
+  .corner-frame:hover::after,
+  .corner-frame:focus-within::before,
+  .corner-frame:focus-within::after {
+    width: 24px;
+    height: 24px;
+    border-color: theme('colors.navy.800');
+  }
+
+  /* Faint technical blueprint grid, used as an ambient hero background */
+  .blueprint-grid {
+    background-image:
+      linear-gradient(theme('colors.navy.900') 1px, transparent 1px),
+      linear-gradient(90deg, theme('colors.navy.900') 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Monospace "spec tag" label, like a part/rev number on a technical plate */
+  .spec-tag {
+    @apply font-mono text-[11px] tracking-[0.18em] uppercase text-navy-500;
+  }
+
+  /* Animated underline for nav / text links */
+  .link-underline {
+    position: relative;
+  }
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: theme('colors.navy.500');
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .link-underline:hover::after,
+  .link-underline.is-active::after {
+    transform: scaleX(1);
+  }
+
+  /* Primary CTA button with a diagonal sheen sweep on hover */
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-sm
+      bg-navy-800 px-6 py-3 font-body text-sm font-semibold uppercase tracking-wide text-white
+      shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-card-hover;
+  }
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, 0.22) 42%, transparent 60%);
+    transform: translateX(-120%);
+    transition: transform 0.6s ease;
+  }
+  .btn-primary:hover::before {
+    transform: translateX(120%);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border-2 border-navy-800 bg-transparent
+      px-6 py-3 font-body text-sm font-semibold uppercase tracking-wide text-navy-800
+      transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy-800 hover:text-white hover:shadow-card-hover;
+  }
+
+  .stagger-1 { animation-delay: 80ms; }
+  .stagger-2 { animation-delay: 160ms; }
+  .stagger-3 { animation-delay: 240ms; }
+  .stagger-4 { animation-delay: 320ms; }
+  .stagger-5 { animation-delay: 400ms; }
+  .stagger-6 { animation-delay: 480ms; }
+}
