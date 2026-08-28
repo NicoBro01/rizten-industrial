@@ -15,7 +15,7 @@ export default function ChiSiamo() {
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="spec-tag text-navy-300">Chi siamo</p>
           <h1 className="mt-2 max-w-2xl font-display text-4xl font-bold uppercase text-white sm:text-6xl">
-            La nostra storia
+            PERCHÉ SCEGLIERE RIZTEN INDUSTRIAL?
           </h1>
         </div>
       </section>
@@ -25,23 +25,24 @@ export default function ChiSiamo() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <p className="text-lg leading-relaxed text-steel-700">
-              [Testo placeholder] {COMPANY.name} nasce dall&apos;esperienza sul campo di un team di
-              tecnici specializzati in manutenzione meccanica e impiantistica industriale. Nel corso
-              degli anni abbiamo affiancato aziende di diversi settori, costruendo un metodo di
-              lavoro fatto di puntualità, precisione e attenzione alla sicurezza.
+              Siamo {COMPANY.name}, una realtà dinamica e specializzata nata per rispondere alle
+              esigenze della fabbrica moderna. Uniamo competenze tecniche solide a un approccio proattivo
+              per azzerare i fermi macchina e ottimizzare le performance dei tuoi impianti.
             </p>
             <p className="mt-5 text-lg leading-relaxed text-steel-700">
-              [Testo placeholder] Oggi seguiamo impianti in tutto il territorio con un approccio
-              diretto: interventi programmati per prevenire i guasti e una squadra pronta a
-              rispondere rapidamente in caso di urgenza. Questo testo è un contenuto segnaposto:
-              sostituiscilo con la storia reale dell&apos;azienda.
+              Giovani, specializzati, orientati al futuro. Rizten Industrial nasce dall'iniziativa di un team giovane
+              e altamente qualificato nel settore della meccanica e dell'impiantistica industriale. 
+              Essere una realtà giovane per noi significa flessibilità operativa, 
+              rapidità di intervento e utilizzo di metodologie moderne. 
+              Non ci limitiamo a riparare il guasto quando si verifica: 
+              lavoriamo al fianco dei responsabili di produzione e dei direttori di stabilimento per 
+              implementare strategie di manutenzione preventiva e predittiva.
             </p>
 
             <div className="mt-10 border-l-2 border-navy-500 pl-6">
               <p className="spec-tag">Missione</p>
               <p className="mt-2 text-xl font-medium leading-relaxed text-navy-800">
-                [Placeholder] Garantire continuità operativa ai nostri clienti attraverso
-                manutenzione affidabile, interventi tempestivi e competenza tecnica costante.
+                Garantire che i tuoi impianti si fermino solo quando lo decidi tu.
               </p>
             </div>
           </div>
@@ -103,11 +104,6 @@ export default function ChiSiamo() {
         <h2 className="mt-2 max-w-xl font-display text-4xl font-bold text-navy-800 sm:text-5xl">
           Tecnici qualificati, sul campo ogni giorno
         </h2>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-steel-600">
-          [Testo placeholder] La sezione team può essere ampliata con foto, ruoli e brevi bio dei
-          membri dello staff, oppure sostituita con certificazioni e attestati conseguiti
-          dall&apos;azienda.
-        </p>
       </section>
     </>
   );

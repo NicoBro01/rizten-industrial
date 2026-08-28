@@ -11,9 +11,6 @@ export default function ServiceCard({ service, className = '' }) {
         <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-navy-50 text-navy-800 transition-all duration-300 group-hover:scale-110 group-hover:bg-navy-800 group-hover:text-white">
           {Icon && <Icon className="h-6 w-6" />}
         </div>
-        <span className="spec-tag opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          {service.code}
-        </span>
       </div>
 
       <h3 className="mt-5 font-display text-2xl font-semibold text-navy-800">{service.title}</h3>

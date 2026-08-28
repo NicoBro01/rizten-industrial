@@ -23,7 +23,7 @@ export default function Contatti() {
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="spec-tag text-navy-300">Contatti</p>
           <h1 className="mt-2 max-w-2xl font-display text-4xl font-bold uppercase text-white sm:text-6xl">
-            Parliamo del tuo progetto
+            Non aspettare il prossimo guasto. Metti in sicurezza la tua produzione
           </h1>
         </div>
       </section>

@@ -1,20 +1,7 @@
-// ─────────────────────────────────────────────────────────────────────────
-// CONTENUTI DEL SITO — tutti i dati "placeholder" sono raccolti qui
-// per essere modificati facilmente in un unico punto.
-// ─────────────────────────────────────────────────────────────────────────
-
 export const COMPANY = {
   name: 'Rizten Industrial',
-  tagline: 'Impianti e Manutenzione',
-  // PLACEHOLDER: percorso del logo sul vostro server.
-  // Il logo NON è importato come asset del bundle (niente import da src/assets):
-  // è un semplice <img src="..."> che punta a un file ospitato sul server,
-  // così potete sostituirlo in qualsiasi momento senza ricompilare il sito.
-  // Di default punta a "/logo.png" (file in public/ → root del sito pubblicato).
-  // Sostituire con l'URL assoluto del vostro dominio quando disponibile, es:
-  // 'https://www.riztenindustrial.it/logo.png'
+  tagline: 'L\'efficienza industriale ha una nuova energia',
   logoUrl: '/logo.png',
-  // PLACEHOLDER — dati di contatto
   email: 'info@riztenindustrial.it',
   phone: '+39 0000 000000',
   phoneDisplay: '+39 000 0000000',
@@ -30,92 +17,73 @@ export const NAV_LINKS = [
   { label: 'Contatti', to: '/contatti' },
 ];
 
-// icon: chiave usata da ServiceCard per selezionare l'icona SVG inline
 export const SERVICES = [
   {
-    id: 'manutenzione-impianti',
+    id: 'manutenzione-meccanica-industriale',
     icon: 'gear',
     code: 'SRV-01',
-    title: 'Manutenzione Impianti',
+    title: 'Manutenzione Meccanica Industriale',
     description:
-      'Manutenzione ordinaria e straordinaria di impianti industriali, con piani programmati per ridurre i fermi macchina. [Testo placeholder: personalizzare con i dettagli reali.]',
+      'Interventi ordinari, straordinari e correttivi su organi di trasmissione, motori, riduttori e linee di produzione automatizzate. Revisioniamo e rigeneriamo i tuoi macchinari per prolungarne la vita utile.',
     featured: true,
   },
   {
-    id: 'installazioni',
+    id: 'impiantistica-piping',
     icon: 'crane',
     code: 'SRV-02',
-    title: 'Installazioni',
+    title: 'Impiantistica e Piping',
     description:
-      'Progettazione e installazione di nuovi impianti e linee produttive, dal sopralluogo tecnico al collaudo finale. [Testo placeholder: personalizzare con i dettagli reali.]',
+      'Installazione, manutenzione e collaudo di impianti idraulici, pneumatici, oleodinamici e reti di distribuzione fluidi/gas per l\'industria.',
     featured: true,
   },
   {
-    id: 'saldature',
+    id: 'montaggi-traslohi-industriali',
     icon: 'weld',
     code: 'SRV-03',
-    title: 'Saldature e Carpenteria',
+    title: 'Montaggi e Traslochi Industriali',
     description:
-      'Lavorazioni di saldatura e carpenteria metallica eseguite da personale qualificato, su disegno o su misura. [Testo placeholder: personalizzare con i dettagli reali.]',
+      'Gestione chiavi in mano del montaggio di nuovi macchinari o dello spostamento e ricollocamento di intere linee produttive e reparti.',
     featured: true,
   },
   {
-    id: 'interventi-chiamata',
+    id: 'revamping-aggiornamento-tecnologico',
     icon: 'phone',
     code: 'SRV-04',
-    title: 'Interventi su Chiamata',
+    title: 'Revamping e Aggiornamento Tecnologico',
     description:
-      'Assistenza rapida su chiamata per guasti e urgenze, con tecnici pronti a intervenire su tutto il territorio. [Testo placeholder: personalizzare con i dettagli reali.]',
+      'Interventi di ammodernamento su impianti datati per adeguarli ai moderni standard di produttività, efficienza energetica e sicurezza.',
     featured: true,
-  },
-  {
-    id: 'manutenzione-preventiva',
-    icon: 'shield',
-    code: 'SRV-05',
-    title: 'Manutenzione Preventiva',
-    description:
-      'Piani di controllo periodico pensati per prevenire i guasti prima che si verifichino, riducendo i costi nel tempo. [Testo placeholder.]',
-    featured: false,
-  },
-  {
-    id: 'consulenza-tecnica',
-    icon: 'clipboard',
-    code: 'SRV-06',
-    title: 'Consulenza Tecnica',
-    description:
-      'Sopralluoghi, perizie e consulenza tecnica per la scelta della soluzione impiantistica più adatta alle vostre esigenze. [Testo placeholder.]',
-    featured: false,
-  },
+  }
 ];
 
 export const VALUES = [
   {
     icon: 'target',
-    title: 'Affidabilità',
-    description: 'Manteniamo gli impegni presi: tempi certi e interventi puntuali. [Placeholder]',
-  },
-  {
-    icon: 'shield',
-    title: 'Sicurezza',
-    description: 'Lavoriamo nel rispetto rigoroso delle normative di sicurezza sul lavoro. [Placeholder]',
+    title: 'Zero sorprese',
+    description: 'Approccio proattivo e manutenzione programmata per intercettare le anomalie prima che si trasformino in fermi macchina costosi.',
   },
   {
     icon: 'gear',
-    title: 'Competenza Tecnica',
-    description: 'Tecnici qualificati e formati costantemente sulle nuove tecnologie. [Placeholder]',
+    title: 'Massima flessibilità',
+    description: 'Interveniamo negli orari migliori per il tuo flusso di lavoro (turni notturni, weekend, pause di produzione) per non impattare sul tuo business.',
+  },
+  {
+    icon: 'shield',
+    title: 'Sicurezza e Tracciabilità',
+    description: 'Operiamo nel pieno rispetto delle normative HSE. Ogni intervento è documentato con report tecnici dettagliati rilasciati al cliente.',
   },
   {
     icon: 'handshake',
     title: 'Trasparenza',
-    description: 'Preventivi chiari e comunicazione diretta in ogni fase del lavoro. [Placeholder]',
+    description: 'Preventivi chiari e comunicazione diretta in ogni fase del lavoro.',
   },
 ];
 
 export const STATS = [
-  { value: '15+', label: 'Anni di esperienza' },
-  { value: '400+', label: 'Interventi completati' },
-  { value: '120+', label: 'Clienti attivi' },
-  { value: '20', label: 'Tecnici qualificati' },
+  { value: '1+', label: 'Anni di esperienza' },
+  { value: '20+', label: 'Interventi completati' },
+  { value: '10+', label: 'Clienti attivi' },
+  { value: '5', label: 'Tecnici qualificati' },
 ];
 
 export const JOBS = [

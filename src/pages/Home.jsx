@@ -39,14 +39,12 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-steel-600 sm:text-lg">
-              Interventi tecnici puntuali, manutenzione programmata e installazioni per impianti
-              industriali. Un unico partner per la sicurezza e la continuità operativa della vostra
-              azienda.
+              Manutenzione meccanica e impiantistica industriale avanzata. Progettiamo la continuità della tua produzione.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link to="/contatti" className="btn-primary">
-                Richiedi un intervento
+                Richiedi un audit gratuito
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
               <Link to="/servizi" className="btn-secondary">
