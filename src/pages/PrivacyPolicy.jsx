@@ -31,9 +31,6 @@ export default function PrivacyPolicy() {
             <p className="mt-3">
               Il Titolare del trattamento dei dati personali raccolti tramite questo sito è{' '}
               {COMPANY.name}, con sede in {COMPANY.address}, P.IVA {COMPANY.piva}{' '}
-              <span className="text-steel-400">
-                (dati placeholder — sostituire con i dati reali dell&apos;azienda)
-              </span>
               . Per qualsiasi richiesta relativa al trattamento dei dati personali è possibile
               scrivere a{' '}
               <a href={`mailto:${COMPANY.email}`} className="link-underline text-navy-700">

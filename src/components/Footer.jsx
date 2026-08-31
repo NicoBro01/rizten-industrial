@@ -94,7 +94,6 @@ export default function Footer() {
           </p>
           <p className="font-mono">
             P.IVA {COMPANY.piva}{' '}
-            <span className="text-steel-400">(placeholder — sostituire con dato reale)</span>
           </p>
         </div>
       </div>

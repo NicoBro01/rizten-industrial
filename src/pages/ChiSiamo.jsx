@@ -98,7 +98,6 @@ export default function ChiSiamo() {
         </div>
       </section>
 
-      {/* TEAM (placeholder) */}
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
         <p className="spec-tag">Il team</p>
         <h2 className="mt-2 max-w-xl font-display text-4xl font-bold text-navy-800 sm:text-5xl">

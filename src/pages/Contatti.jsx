@@ -56,7 +56,6 @@ export default function Contatti() {
                   <span className="font-mono text-xs">
                     P.IVA {COMPANY.piva}
                     <br />
-                    <span className="text-steel-400">(placeholder)</span>
                   </span>
                 </li>
               </ul>

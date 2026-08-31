@@ -2,11 +2,11 @@ export const COMPANY = {
   name: 'Rizten Industrial',
   tagline: 'L\'efficienza industriale ha una nuova energia',
   logoUrl: '/logo.png',
-  email: 'info@riztenindustrial.it',
+  email: 'riztenindustrial@pec.it',
   phone: '+39 0000 000000',
   phoneDisplay: '+39 000 0000000',
-  address: 'Via dell\u2019Industria, 00 — 00000 Città (XX)',
-  piva: 'IT00000000000',
+  address: 'Via Pascoli, 29 — 03043 Cassino (FR)',
+  piva: '03343750604',
 };
 
 export const NAV_LINKS = [
@@ -93,7 +93,7 @@ export const JOBS = [
     location: 'Milano (MI)',
     type: 'Tempo Indeterminato · Full Time',
     description:
-      'Cerchiamo un tecnico manutentore da inserire nel team per interventi di manutenzione ordinaria e straordinaria su impianti industriali. [Descrizione placeholder.]',
+      'Cerchiamo un tecnico manutentore da inserire nel team per interventi di manutenzione ordinaria e straordinaria su impianti industriali.',
     requirements: [
       'Diploma tecnico o qualifica professionale in ambito meccanico/elettromeccanico',
       'Esperienza pregressa in manutenzione industriale (min. 2 anni)',
@@ -107,7 +107,7 @@ export const JOBS = [
     location: 'Bergamo (BG)',
     type: 'Tempo Determinato · Full Time',
     description:
-      'Ricerchiamo un saldatore con esperienza per lavorazioni di carpenteria metallica e saldature su acciaio e altre leghe. [Descrizione placeholder.]',
+      'Ricerchiamo un saldatore con esperienza per lavorazioni di carpenteria metallica e saldature su acciaio e altre leghe.',
     requirements: [
       'Patentino di saldatura in corso di validità (es. TIG/MIG-MAG)',
       'Esperienza pregressa in officina o cantiere',
@@ -121,7 +121,7 @@ export const JOBS = [
     location: 'Brescia (BS)',
     type: 'Part Time · Su Chiamata',
     description:
-      'Cerchiamo una figura flessibile per interventi rapidi su chiamata in caso di guasti o urgenze presso i clienti. [Descrizione placeholder.]',
+      'Cerchiamo una figura flessibile per interventi rapidi su chiamata in caso di guasti o urgenze presso i clienti.',
     requirements: [
       'Esperienza pratica in ambito manutenzione o impiantistica',
       'Flessibilità oraria, anche in orari serali/weekend',
