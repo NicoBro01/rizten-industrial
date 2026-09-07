@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { COMPANY, NAV_LINKS } from '../data/content';
 import { MailIcon, PhoneIcon, MapPinIcon } from './Icons';
+import { withBase } from '../utils/url';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -12,17 +13,6 @@ export default function Footer() {
           {/* Azienda */}
           <div>
             <div className="flex items-center gap-2.5">
-              <img
-                src={COMPANY.logoUrl}
-                alt={`Logo ${COMPANY.name}`}
-                width={32}
-                height={32}
-                loading="lazy"
-                className="h-8 w-8 object-contain"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
               <span className="font-display text-xl font-bold uppercase tracking-wide text-navy-800">
                 {COMPANY.name}
               </span>

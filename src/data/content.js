@@ -3,8 +3,8 @@ export const COMPANY = {
   tagline: 'L\'efficienza industriale ha una nuova energia',
   logoUrl: '/logo.png',
   email: 'riztenindustrial@pec.it',
-  phone: '+39 0000 000000',
-  phoneDisplay: '+39 000 0000000',
+  phone: '+39 377 8456072',
+  phoneDisplay: '+39 377 8456072',
   address: 'Via Pascoli, 29 — 03043 Cassino (FR)',
   piva: '03343750604',
 };
@@ -26,6 +26,8 @@ export const SERVICES = [
     description:
       'Interventi ordinari, straordinari e correttivi su organi di trasmissione, motori, riduttori e linee di produzione automatizzate. Revisioniamo e rigeneriamo i tuoi macchinari per prolungarne la vita utile.',
     featured: true,
+    image: '/Pic5.jpg',
+    imagePosition: 'top',
   },
   {
     id: 'impiantistica-piping',
@@ -35,6 +37,8 @@ export const SERVICES = [
     description:
       'Installazione, manutenzione e collaudo di impianti idraulici, pneumatici, oleodinamici e reti di distribuzione fluidi/gas per l\'industria.',
     featured: true,
+    image: '/Pic3.jpg',
+    imagePosition: 'top',
   },
   {
     id: 'montaggi-traslohi-industriali',
@@ -44,6 +48,7 @@ export const SERVICES = [
     description:
       'Gestione chiavi in mano del montaggio di nuovi macchinari o dello spostamento e ricollocamento di intere linee produttive e reparti.',
     featured: true,
+    image: '/Pic11.jpg',
   },
   {
     id: 'revamping-aggiornamento-tecnologico',
@@ -53,7 +58,16 @@ export const SERVICES = [
     description:
       'Interventi di ammodernamento su impianti datati per adeguarli ai moderni standard di produttività, efficienza energetica e sicurezza.',
     featured: true,
+    image: '/Pic6.jpg',
   }
+];
+
+// Immagini "sul campo" per il carosello in home page.
+export const GALLERY_IMAGES = [
+  { src: '/Pic2.jpg', alt: 'Linea di imbottigliamento automatizzata', caption: 'Linee di produzione automatizzate' },
+  { src: '/Pic4.jpg', alt: 'Tecnico al lavoro su una saldatura di precisione', caption: 'Interventi di saldatura e carpenteria' },
+  { src: '/Pic7.jpg', alt: 'Linea di produzione', caption: 'Impianti di produzione ad alta intensità' },
+  { src: '/Pic12.jpg', alt: 'Struttura industriale e silos contro il cielo', caption: 'Impianti e strutture industriali' },
 ];
 
 export const VALUES = [

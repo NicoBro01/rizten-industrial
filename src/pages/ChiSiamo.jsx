@@ -1,6 +1,7 @@
 import Seo from '../components/Seo';
 import { COMPANY, VALUES, STATS } from '../data/content';
 import { SERVICE_ICONS } from '../components/Icons';
+import { withBase } from '../utils/url';
 
 export default function ChiSiamo() {
   return (
@@ -11,8 +12,17 @@ export default function ChiSiamo() {
       />
 
       {/* HEADER PAGINA */}
-      <section className="border-b border-steel-200 bg-navy-800">
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
+      <section className="relative flex min-h-[318px] items-center overflow-hidden border-b border-steel-200 bg-navy-800 sm:min-h-[398px]">
+        <img
+          src={withBase('/Pic9.jpg')}
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/85 to-navy-900/55" />
+        <div className="relative mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="spec-tag text-navy-300">Chi siamo</p>
           <h1 className="mt-2 max-w-2xl font-display text-4xl font-bold uppercase text-white sm:text-6xl">
             PERCHÉ SCEGLIERE RIZTEN INDUSTRIAL?
@@ -31,11 +41,11 @@ export default function ChiSiamo() {
             </p>
             <p className="mt-5 text-lg leading-relaxed text-steel-700">
               Giovani, specializzati, orientati al futuro. Rizten Industrial nasce dall'iniziativa di un team giovane
-              e altamente qualificato nel settore della meccanica e dell'impiantistica industriale. 
-              Essere una realtà giovane per noi significa flessibilità operativa, 
-              rapidità di intervento e utilizzo di metodologie moderne. 
-              Non ci limitiamo a riparare il guasto quando si verifica: 
-              lavoriamo al fianco dei responsabili di produzione e dei direttori di stabilimento per 
+              e altamente qualificato nel settore della meccanica e dell'impiantistica industriale.
+              Essere una realtà giovane per noi significa flessibilità operativa,
+              rapidità di intervento e utilizzo di metodologie moderne.
+              Non ci limitiamo a riparare il guasto quando si verifica:
+              lavoriamo al fianco dei responsabili di produzione e dei direttori di stabilimento per
               implementare strategie di manutenzione preventiva e predittiva.
             </p>
 
@@ -103,6 +113,17 @@ export default function ChiSiamo() {
         <h2 className="mt-2 max-w-xl font-display text-4xl font-bold text-navy-800 sm:text-5xl">
           Tecnici qualificati, sul campo ogni giorno
         </h2>
+
+        <div className="corner-frame group relative mt-10 overflow-hidden border border-steel-200">
+          <img
+            src={withBase('/Pic10.jpg')}
+            alt="Il team Rizten Industrial al lavoro in uno stabilimento produttivo"
+            loading="lazy"
+            decoding="async"
+            className="h-72 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 sm:h-96"
+          />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-900/60 via-navy-900/0 to-transparent" />
+        </div>
       </section>
     </>
   );

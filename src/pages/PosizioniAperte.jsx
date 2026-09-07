@@ -3,6 +3,7 @@ import Seo from '../components/Seo';
 import JobCard from '../components/JobCard';
 import { COMPANY, JOBS } from '../data/content';
 import { ArrowRightIcon } from '../components/Icons';
+import { withBase } from '../utils/url';
 
 export default function PosizioniAperte() {
   return (
@@ -12,8 +13,17 @@ export default function PosizioniAperte() {
         description="Le posizioni aperte in Rizten Industrial: candidati per ruoli di tecnico manutentore, saldatore e addetto interventi su chiamata."
       />
 
-      <section className="border-b border-steel-200 bg-navy-800">
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
+      <section className="relative flex min-h-[318px] items-center overflow-hidden border-b border-steel-200 bg-navy-800 sm:min-h-[398px]">
+        <img
+          src={withBase('/Pic13.jpg')}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/85 to-navy-900/60" />
+        <div className="relative mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="spec-tag text-navy-300">Lavora con noi</p>
           <h1 className="mt-2 max-w-2xl font-display text-4xl font-bold uppercase text-white sm:text-6xl">
             Posizioni aperte

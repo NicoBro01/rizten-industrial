@@ -5,6 +5,7 @@ import PersonForm from '../components/PersonForm';
 import CompanyForm from '../components/CompanyForm';
 import { COMPANY } from '../data/content';
 import { MailIcon, PhoneIcon, MapPinIcon, ClipboardIcon } from '../components/Icons';
+import { withBase } from '../utils/url';
 
 export default function Contatti() {
   const location = useLocation();
@@ -19,8 +20,17 @@ export default function Contatti() {
         description="Contatta Rizten Industrial per un preventivo, un contratto di manutenzione o per candidarti a una posizione aperta. Modulo semplice e risposta rapida."
       />
 
-      <section className="border-b border-steel-200 bg-navy-800">
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
+      <section className="relative flex min-h-[318px] items-center overflow-hidden border-b border-steel-200 bg-navy-800 sm:min-h-[398px]">
+        <img
+          src={withBase('/Pic4.jpg')}
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/85 to-navy-900/55" />
+        <div className="relative mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="spec-tag text-navy-300">Contatti</p>
           <h1 className="mt-2 max-w-2xl font-display text-4xl font-bold uppercase text-white sm:text-6xl">
             Non aspettare il prossimo guasto. Metti in sicurezza la tua produzione

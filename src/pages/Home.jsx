@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import ServiceCard from '../components/ServiceCard';
-import { COMPANY, SERVICES, VALUES, STATS } from '../data/content';
+import ImageCarousel from '../components/ImageCarousel';
+import { COMPANY, SERVICES, VALUES, STATS, GALLERY_IMAGES } from '../data/content';
 import { ArrowRightIcon } from '../components/Icons';
+import { withBase } from '../utils/url';
 
 export default function Home() {
   const featured = SERVICES.filter((s) => s.featured);
@@ -16,29 +18,28 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-steel-200">
-        <div className="blueprint-grid pointer-events-none absolute inset-0 opacity-[0.035]" />
+        <img
+          src={withBase('/Pic7.jpg')}
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/85 to-navy-900/55" />
+        <div className="blueprint-grid pointer-events-none absolute inset-0 opacity-[0.06]" />
         <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:py-32">
           <div className="max-w-3xl animate-fade-up">
-            <div className="corner-frame inline-flex items-center gap-2.5 border border-steel-200 px-4 py-2">
-              <img
-                src={COMPANY.logoUrl}
-                alt={`Logo ${COMPANY.name}`}
-                width={24}
-                height={24}
-                loading="lazy"
-                className="h-6 w-6 object-contain"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-              <span className="spec-tag">{COMPANY.name}</span>
+            <div className="corner-frame inline-flex items-center gap-2.5 border border-white/25 px-4 py-2">
+              <span className="spec-tag text-navy-200">{COMPANY.name}</span>
             </div>
 
-            <h1 className="mt-6 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight text-navy-800 sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
               {COMPANY.tagline}
             </h1>
 
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-steel-600 sm:text-lg">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-100 sm:text-lg">
               Manutenzione meccanica e impiantistica industriale avanzata. Progettiamo la continuità della tua produzione.
             </p>
 
@@ -47,7 +48,7 @@ export default function Home() {
                 Richiedi un audit gratuito
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
-              <Link to="/servizi" className="btn-secondary">
+              <Link to="/servizi" className="btn-secondary-inverse">
                 Scopri i servizi
               </Link>
             </div>
@@ -85,9 +86,31 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* PERCHÉ SCEGLIERCI */}
-      <section className="border-y border-steel-200 bg-navy-800">
+      {/* GALLERIA / SUL CAMPO */}
+      <section className="border-t border-steel-200 bg-steel-50">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
+          <p className="spec-tag">In azione</p>
+          <h2 className="mt-2 font-display text-4xl font-bold text-navy-800 sm:text-5xl">
+            Il lavoro sul campo
+          </h2>
+          <div className="mt-10 animate-fade-up">
+            <ImageCarousel images={GALLERY_IMAGES} />
+          </div>
+        </div>
+      </section>
+
+      {/* PERCHÉ SCEGLIERCI */}
+      <section className="relative overflow-hidden border-y border-steel-200 bg-navy-800">
+        <img
+          src={withBase('/Pic8.jpg')}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.14]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-800/95 via-navy-800 to-navy-800/95" />
+        <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8">
           <p className="spec-tag text-navy-300">Perché sceglierci</p>
           <h2 className="mt-2 font-display text-4xl font-bold text-white sm:text-5xl">
             Un partner tecnico su cui contare

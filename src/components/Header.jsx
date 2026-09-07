@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { COMPANY, NAV_LINKS } from '../data/content';
 import { MenuIcon, CloseIcon } from './Icons';
+import { withBase } from '../utils/url';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,17 +29,6 @@ export default function Header() {
       <div className="border-b border-steel-200">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
           <Link to="/" className="group flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-            <img
-              src={COMPANY.logoUrl}
-              alt={`Logo ${COMPANY.name}`}
-              width={40}
-              height={40}
-              loading="lazy"
-              className="h-10 w-10 object-contain"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
-            />
             <span className="font-display text-2xl font-bold uppercase tracking-wide text-navy-800 transition-colors group-hover:text-navy-600">
               {COMPANY.name}
             </span>
