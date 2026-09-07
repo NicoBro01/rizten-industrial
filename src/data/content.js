@@ -26,7 +26,7 @@ export const SERVICES = [
     description:
       'Interventi ordinari, straordinari e correttivi su organi di trasmissione, motori, riduttori e linee di produzione automatizzate. Revisioniamo e rigeneriamo i tuoi macchinari per prolungarne la vita utile.',
     featured: true,
-    image: '/Pic5.jpg',
+    image: '/Pic14.png',
     imagePosition: 'top',
   },
   {
