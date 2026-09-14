@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
+import { Analytics } from "@vercel/analytics/react";
 
 // Font self-hosted (nessuna richiesta a Google Fonts / nessun IP trasferito a terzi)
 import '@fontsource/barlow-condensed/500.css';
@@ -19,5 +20,6 @@ import './styles/index.css';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
+    <Analytics />
   </StrictMode>
 );
