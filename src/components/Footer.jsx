@@ -55,6 +55,12 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
+                <PhoneIcon className="h-4 w-4 shrink-0 text-navy-500" />
+                <a href={`tel:${COMPANY.phone2}`} className="transition-colors hover:text-navy-800">
+                  {COMPANY.phone2Display}
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
                 <MailIcon className="h-4 w-4 shrink-0 text-navy-500" />
                 <a href={`mailto:${COMPANY.email}`} className="transition-colors hover:text-navy-800">
                   {COMPANY.email}

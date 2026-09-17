@@ -5,6 +5,8 @@ export const COMPANY = {
   email: 'riztenindustrial@pec.it',
   phone: '+39 377 8456072',
   phoneDisplay: '+39 377 8456072',
+  phone2: '+39 377 8870914',
+  phone2Display: '+39 377 8870914',
   address: 'Via Pascoli, 29 — 03043 Cassino (FR)',
   piva: '03343750604',
 };

@@ -56,6 +56,12 @@ export default function Contatti() {
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
+                  <PhoneIcon className="mt-0.5 h-5 w-5 shrink-0 text-navy-500" />
+                  <a href={`tel:${COMPANY.phone2}`} className="link-underline">
+                    {COMPANY.phone2Display}
+                  </a>
+                </li>
+                <li className="flex items-start gap-3">
                   <MailIcon className="mt-0.5 h-5 w-5 shrink-0 text-navy-500" />
                   <a href={`mailto:${COMPANY.email}`} className="link-underline break-all">
                     {COMPANY.email}
