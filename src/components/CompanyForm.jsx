@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, APPLICATION_TYPES } from '../data/content';
+import { APPLICATION_TYPES } from '../data/content';
 import { CheckIcon, ArrowRightIcon } from './Icons';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -63,7 +63,7 @@ export default function CompanyForm() {
       form.messaggio,
     ];
 
-    const mailtoUrl = `mailto:${COMPANY.email}?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:commerciale@rizten.it?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
 

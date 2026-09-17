@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { COMPANY, JOBS } from '../data/content';
+import { JOBS } from '../data/content';
 import { UploadIcon, CheckIcon, ArrowRightIcon } from './Icons';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -76,7 +76,7 @@ export default function PersonForm({ initialJobTitle = '' }) {
         : 'Nessun CV indicato: ricordati di allegare il file manualmente prima di inviare.',
     ];
 
-    const mailtoUrl = `mailto:${COMPANY.email}?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:personale@rizten.it?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
 
