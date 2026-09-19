@@ -28,10 +28,12 @@ export default function Header() {
     >
       <div className="border-b border-steel-200">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
-          <Link to="/" className="group flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-            <span className="font-display text-2xl font-bold uppercase tracking-wide text-navy-800 transition-colors group-hover:text-navy-600">
-              {COMPANY.name}
-            </span>
+          <Link to="/" className="group flex items-center" onClick={() => setMenuOpen(false)}>
+            <img
+              src={withBase('/logo-mark.jpg')}
+              alt={COMPANY.name}
+              className="h-11 w-auto rounded-md shadow-card ring-1 ring-navy-900/10 transition-transform duration-300 ease-out group-hover:scale-[1.03] sm:h-12"
+            />
           </Link>
 
           {/* Nav desktop */}

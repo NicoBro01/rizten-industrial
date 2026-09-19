@@ -12,12 +12,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Azienda */}
           <div>
-            <div className="flex items-center gap-2.5">
-              <span className="font-display text-xl font-bold uppercase tracking-wide text-navy-800">
-                {COMPANY.name}
-              </span>
-            </div>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-steel-600">
+            <img
+              src={withBase('/logo-mark.jpg')}
+              alt={COMPANY.name}
+              className="h-12 w-auto rounded-md shadow-card ring-1 ring-navy-900/10"
+            />
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-steel-600">
               {COMPANY.tagline}. Manutenzione meccanica, installazioni e interventi tecnici
               affidabili nel tempo.
             </p>
